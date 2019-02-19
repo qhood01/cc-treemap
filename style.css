@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+
+text {
+    pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+    fill: none;
+    stroke: #fff;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent rect {
+  fill: #bebada;
+}
+
+.grandparent:hover rect {
+  fill: #8dd3c7;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+rect.parent {
+  pointer-events: all;
+}
+
+rect.child {
+    fill: #fb8072;
+}
+
+.children:hover rect.child {
+  fill: #80b1d3;
+}
+
+body {
+  background: #fcfcfa;
+  color: #333;
+  font-family: "PT Serif", serif;
+  margin: 1em auto 4em auto;
+  position: relative;
+}
+
+h2,
+aside {
+  color: #000;
+  font-family: "PT Sans", sans-serif;
+}
+
+h2 {
+    margin-left: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+aside {
+    font-size: small;
+    width: 180px;
+    margin-left: 20px;
+}
